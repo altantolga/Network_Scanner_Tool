@@ -10,6 +10,7 @@ def get_user_input():
         print("Enter IP Address")
     return user_input
 
+
 def scan_network(ip):
     arp_request_packet=scapy.ARP(pdst=ip)
     #scapy.ls(scapy.ARP())
